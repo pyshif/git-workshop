@@ -33,15 +33,21 @@
 //     start = current;
 // });
 
-// let start = new Date();
-// console.log(`開始: ${start}`);
+let start = new Date();
+console.log(`開始: ${start}`);
 
 setTimeout(function () {
-    console.log(`刷牙完成`);
+    const current = new Date();
+    console.log(`刷牙完成: ${current - start} ms`);
+    start = current;
     setTimeout(function () {
-        console.log(`吃完早餐`);
+        const current = new Date();
+        console.log(`吃完早餐 ${current - start} ms`);
+        start = current;
         setTimeout(function () {
-            console.log(`寫完功課`);
+            const current = new Date();
+            console.log(`寫完功課 ${current - start} ms`);
+            start = current;
         }, 2000);
     }, 3000);
 }, 2000);
