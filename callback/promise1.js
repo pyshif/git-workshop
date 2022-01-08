@@ -27,3 +27,5 @@ doWork('刷牙', 2000)
     .catch((error) => {
         console.log(`${error} at ${new Date()}`);
     });
+
+console.log(`工作開始: ${new Date()}`);
