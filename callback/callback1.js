@@ -35,7 +35,6 @@
 
 let start = new Date();
 console.log(`開始: ${start}`);
-
 setTimeout(function () {
     const current = new Date();
     console.log(`刷牙完成: ${current - start} ms`);
